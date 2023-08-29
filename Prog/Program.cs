@@ -4,7 +4,7 @@
 
 using System.Runtime.Serialization;
 
-string[] ArrayOfShorts(string[] array)
+string[] ArrayOfShorts(string[] array) //принимаем строчный массив и выдаём новый строчный массив коротышек
 {
     string[] shorts = {};
     int j = 0;
@@ -15,6 +15,8 @@ string[] ArrayOfShorts(string[] array)
             shorts[j] = array[i];
             j++;
         }
+        else continue;
     }
     return shorts;
 }
+
